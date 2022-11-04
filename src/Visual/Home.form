@@ -32,7 +32,7 @@
             <border type="none"/>
             <children/>
           </grid>
-          <component id="b00c6" class="javax.swing.JLabel">
+          <component id="b00c6" class="javax.swing.JLabel" binding="dp1">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
               <gridbag weightx="0.0" weighty="0.0"/>
@@ -61,7 +61,7 @@
             <border type="none"/>
             <children/>
           </grid>
-          <component id="7b8ce" class="javax.swing.JLabel">
+          <component id="7b8ce" class="javax.swing.JLabel" binding="dp2">
             <constraints>
               <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
               <gridbag weightx="0.0" weighty="0.0"/>
@@ -90,7 +90,7 @@
             <border type="none"/>
             <children/>
           </grid>
-          <component id="a6b3f" class="javax.swing.JLabel">
+          <component id="a6b3f" class="javax.swing.JLabel" binding="dp3">
             <constraints>
               <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
               <gridbag weightx="0.0" weighty="0.0"/>
@@ -119,7 +119,7 @@
             <border type="none"/>
             <children/>
           </grid>
-          <component id="33cd7" class="javax.swing.JLabel">
+          <component id="33cd7" class="javax.swing.JLabel" binding="dp4">
             <constraints>
               <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
               <gridbag weightx="0.0" weighty="0.0"/>
@@ -148,7 +148,7 @@
             <border type="none"/>
             <children/>
           </grid>
-          <component id="21c09" class="javax.swing.JLabel">
+          <component id="21c09" class="javax.swing.JLabel" binding="dp5">
             <constraints>
               <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
               <gridbag weightx="0.0" weighty="0.0"/>
@@ -177,7 +177,7 @@
             <border type="none"/>
             <children/>
           </grid>
-          <component id="e196c" class="javax.swing.JLabel">
+          <component id="e196c" class="javax.swing.JLabel" binding="dp6">
             <constraints>
               <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
               <gridbag weightx="0.0" weighty="0.0"/>
@@ -206,7 +206,7 @@
             <border type="none"/>
             <children/>
           </grid>
-          <component id="8de2c" class="javax.swing.JLabel">
+          <component id="8de2c" class="javax.swing.JLabel" binding="dp7">
             <constraints>
               <grid row="7" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
               <gridbag weightx="0.0" weighty="0.0"/>
@@ -235,7 +235,7 @@
             <border type="none"/>
             <children/>
           </grid>
-          <component id="32314" class="javax.swing.JLabel">
+          <component id="32314" class="javax.swing.JLabel" binding="dp8">
             <constraints>
               <grid row="7" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
               <gridbag weightx="0.0" weighty="0.0"/>

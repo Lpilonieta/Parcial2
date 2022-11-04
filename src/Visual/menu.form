@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Visual.menu">
+  <grid id="27dc6" binding="menu" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="3">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="c1dea" class="javax.swing.JLabel">
+        <constraints/>
+        <properties>
+          <text value="Mas detalles del producto"/>
+        </properties>
+      </component>
+      <component id="f2a63" class="javax.swing.JLabel" binding="masDetalles">
+        <constraints/>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
+      <component id="dea15" class="javax.swing.JButton" binding="cerrarButton" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="cerrar"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

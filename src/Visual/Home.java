@@ -1,5 +1,7 @@
 package Visual;
 
+import Data.Productos;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ItemEvent;
@@ -27,8 +29,16 @@ public class Home {
     private JCheckBox cbProd5;
     private JCheckBox cbProd6;
     private JCheckBox cbProd8;
+    private JLabel dp1;
+    private JLabel dp2;
+    private JLabel dp3;
+    private JLabel dp4;
+    private JLabel dp5;
+    private JLabel dp6;
+    private JLabel dp7;
+    private JLabel dp8;
     private static JFrame frame;
-    private String[] seleccionados;
+    private menu opciones;
 
     public Home() {
         {
@@ -39,6 +49,14 @@ public class Home {
         }
         frame = new JFrame("Home");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        dp1.setText("Valor: " + Productos.getInventario()[0].getValor());
+        dp2.setText("Valor: " + Productos.getInventario()[1].getValor());
+        dp3.setText("Valor: " + Productos.getInventario()[2].getValor());
+        dp4.setText("Valor: " + Productos.getInventario()[3].getValor());
+        dp5.setText("Valor: " + Productos.getInventario()[4].getValor());
+        dp6.setText("Valor: " + Productos.getInventario()[5].getValor());
+        dp7.setText("Valor: " + Productos.getInventario()[6].getValor());
+        dp8.setText("Valor: " + Productos.getInventario()[7].getValor());
         frame.add($$$getRootComponent$$$());
         frame.setVisible(true);
 
@@ -166,6 +184,70 @@ public class Home {
         });
 
 
+        dp1.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                String datos = Productos.getInventario()[0].menu();
+                opciones = new menu(datos);
+            }
+
+        });
+        dp2.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                String datos = Productos.getInventario()[1].menu();
+                opciones = new menu(datos);
+            }
+
+        });
+        dp3.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                String datos = Productos.getInventario()[2].menu();
+                opciones = new menu(datos);
+            }
+
+        });
+        dp4.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                String datos = Productos.getInventario()[3].menu();
+                opciones = new menu(datos);
+            }
+
+        });
+        dp5.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                String datos = Productos.getInventario()[4].menu();
+                opciones = new menu(datos);
+            }
+
+        });
+        dp6.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                String datos = Productos.getInventario()[5].menu();
+                opciones = new menu(datos);
+            }
+
+        });
+        dp7.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                String datos = Productos.getInventario()[6].menu();
+                opciones = new menu(datos);
+            }
+
+        });
+        dp8.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                String datos = Productos.getInventario()[7].menu();
+                opciones = new menu(datos);
+            }
+
+        });
     }
 
 
@@ -204,13 +286,13 @@ public class Home {
         gbc.gridy = 1;
         gbc.fill = GridBagConstraints.BOTH;
         panel1.add(panel2, gbc);
-        final JLabel label1 = new JLabel();
-        label1.setText("descripcion");
+        dp1 = new JLabel();
+        dp1.setText("descripcion");
         gbc = new GridBagConstraints();
         gbc.gridx = 0;
         gbc.gridy = 2;
         gbc.anchor = GridBagConstraints.WEST;
-        panel1.add(label1, gbc);
+        panel1.add(dp1, gbc);
         producto2Label = new JLabel();
         producto2Label.setText("Producto2");
         gbc = new GridBagConstraints();
@@ -226,13 +308,13 @@ public class Home {
         gbc.gridy = 1;
         gbc.fill = GridBagConstraints.BOTH;
         panel1.add(panel3, gbc);
-        final JLabel label2 = new JLabel();
-        label2.setText("descripcion");
+        dp2 = new JLabel();
+        dp2.setText("descripcion");
         gbc = new GridBagConstraints();
         gbc.gridx = 2;
         gbc.gridy = 2;
         gbc.anchor = GridBagConstraints.WEST;
-        panel1.add(label2, gbc);
+        panel1.add(dp2, gbc);
         producto3Label = new JLabel();
         producto3Label.setText("Producto3");
         gbc = new GridBagConstraints();
@@ -248,13 +330,13 @@ public class Home {
         gbc.gridy = 1;
         gbc.fill = GridBagConstraints.BOTH;
         panel1.add(panel4, gbc);
-        final JLabel label3 = new JLabel();
-        label3.setText("descripcion");
+        dp3 = new JLabel();
+        dp3.setText("descripcion");
         gbc = new GridBagConstraints();
         gbc.gridx = 4;
         gbc.gridy = 2;
         gbc.anchor = GridBagConstraints.WEST;
-        panel1.add(label3, gbc);
+        panel1.add(dp3, gbc);
         producto4Label = new JLabel();
         producto4Label.setText("Producto4");
         gbc = new GridBagConstraints();
@@ -270,13 +352,13 @@ public class Home {
         gbc.gridy = 1;
         gbc.fill = GridBagConstraints.BOTH;
         panel1.add(panel5, gbc);
-        final JLabel label4 = new JLabel();
-        label4.setText("descripcion");
+        dp4 = new JLabel();
+        dp4.setText("descripcion");
         gbc = new GridBagConstraints();
         gbc.gridx = 6;
         gbc.gridy = 2;
         gbc.anchor = GridBagConstraints.WEST;
-        panel1.add(label4, gbc);
+        panel1.add(dp4, gbc);
         producto5Label = new JLabel();
         producto5Label.setText("Producto5");
         gbc = new GridBagConstraints();
@@ -292,13 +374,13 @@ public class Home {
         gbc.gridy = 6;
         gbc.fill = GridBagConstraints.BOTH;
         panel1.add(panel6, gbc);
-        final JLabel label5 = new JLabel();
-        label5.setText("descripcion");
+        dp5 = new JLabel();
+        dp5.setText("descripcion");
         gbc = new GridBagConstraints();
         gbc.gridx = 0;
         gbc.gridy = 7;
         gbc.anchor = GridBagConstraints.WEST;
-        panel1.add(label5, gbc);
+        panel1.add(dp5, gbc);
         producto6Label = new JLabel();
         producto6Label.setText("Producto6");
         gbc = new GridBagConstraints();
@@ -314,13 +396,13 @@ public class Home {
         gbc.gridy = 6;
         gbc.fill = GridBagConstraints.BOTH;
         panel1.add(panel7, gbc);
-        final JLabel label6 = new JLabel();
-        label6.setText("descripcion");
+        dp6 = new JLabel();
+        dp6.setText("descripcion");
         gbc = new GridBagConstraints();
         gbc.gridx = 2;
         gbc.gridy = 7;
         gbc.anchor = GridBagConstraints.WEST;
-        panel1.add(label6, gbc);
+        panel1.add(dp6, gbc);
         producto7Label = new JLabel();
         producto7Label.setText("Producto7");
         gbc = new GridBagConstraints();
@@ -336,13 +418,13 @@ public class Home {
         gbc.gridy = 6;
         gbc.fill = GridBagConstraints.BOTH;
         panel1.add(panel8, gbc);
-        final JLabel label7 = new JLabel();
-        label7.setText("descripcion");
+        dp7 = new JLabel();
+        dp7.setText("descripcion");
         gbc = new GridBagConstraints();
         gbc.gridx = 4;
         gbc.gridy = 7;
         gbc.anchor = GridBagConstraints.WEST;
-        panel1.add(label7, gbc);
+        panel1.add(dp7, gbc);
         producto8Label = new JLabel();
         producto8Label.setText("Producto8");
         gbc = new GridBagConstraints();
@@ -358,13 +440,13 @@ public class Home {
         gbc.gridy = 6;
         gbc.fill = GridBagConstraints.BOTH;
         panel1.add(panel9, gbc);
-        final JLabel label8 = new JLabel();
-        label8.setText("descripcion");
+        dp8 = new JLabel();
+        dp8.setText("descripcion");
         gbc = new GridBagConstraints();
         gbc.gridx = 6;
         gbc.gridy = 7;
         gbc.anchor = GridBagConstraints.WEST;
-        panel1.add(label8, gbc);
+        panel1.add(dp8, gbc);
         final JPanel spacer1 = new JPanel();
         gbc = new GridBagConstraints();
         gbc.gridx = 1;

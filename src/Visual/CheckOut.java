@@ -4,6 +4,8 @@ import Data.Productos;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class CheckOut {
 
@@ -20,13 +22,18 @@ public class CheckOut {
     public CheckOut() {
         principal = new JFrame("checkOut");
 
-        principal.add($$$getRootComponent$$$());
 
         principal.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         calculateSaldo();
         setCartListLabel();
-
+        principal.add($$$getRootComponent$$$());
         principal.setVisible(true);
+        cerrarButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                System.exit(0);
+            }
+        });
     }
 
 
@@ -77,7 +84,8 @@ public class CheckOut {
         for (int i : cart
         ) {
             if (i != 0) {
-                cartList += "\nProducto" + productos[j].getId();
+                cartList += "\nProducto" + productos[j].getId() + "  ";
+                j += 1;
             } else {
                 j += 1;
             }
@@ -148,10 +156,29 @@ public class CheckOut {
         CartList = new JLabel();
         CartList.setText("Cart List");
         gbc = new GridBagConstraints();
-        gbc.gridx = 3;
-        gbc.gridy = 0;
+        gbc.gridx = 4;
+        gbc.gridy = 2;
         gbc.anchor = GridBagConstraints.WEST;
         mainPanel.add(CartList, gbc);
+        final JLabel label1 = new JLabel();
+        label1.setText("Cart List");
+        gbc = new GridBagConstraints();
+        gbc.gridx = 4;
+        gbc.gridy = 1;
+        gbc.anchor = GridBagConstraints.WEST;
+        mainPanel.add(label1, gbc);
+        final JPanel spacer3 = new JPanel();
+        gbc = new GridBagConstraints();
+        gbc.gridx = 3;
+        gbc.gridy = 2;
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        mainPanel.add(spacer3, gbc);
+        final JPanel spacer4 = new JPanel();
+        gbc = new GridBagConstraints();
+        gbc.gridx = 5;
+        gbc.gridy = 2;
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        mainPanel.add(spacer4, gbc);
     }
 
     /**
